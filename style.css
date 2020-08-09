@@ -425,7 +425,7 @@ footer {
     }
     
     .resume {
-        margin-top:50px;
+        margin-top:70px;
         font-size:30px;
     }
     
@@ -441,6 +441,9 @@ footer {
       
 }
 @media (min-width:800px) {
+    .links img {
+        margin-top:30px;
+    }
     .links {
         width: 250px;
         height: 250px;
