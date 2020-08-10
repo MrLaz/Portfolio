@@ -219,7 +219,9 @@ h1 span {
     animation-duration: 3s;
     animation-iteration-count: initial;
 }
-
+.links a {
+    display: inline-block;
+}
 
 
 .links img {
@@ -323,7 +325,7 @@ h1 span {
 .form-class input[type="email"],
 input[type="text"],
 textarea {
-    font-size:20px;
+    font-size:18px;
     height: 40px;
     width: 100%;
     margin-bottom: 10px;
