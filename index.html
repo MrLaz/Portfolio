@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
@@ -43,10 +44,14 @@
     
         <div class="about-container">
 
-            <p class="about-text">My name is Laszlo Borsos, I'm South West London based, hard worker website builder. My layouts will work on any device. Websites don't have to be static, I love making pages come to life.</p>
+            <p class="about-text">My name is Laszlo Borsos, 
+                I'm South West London based, hard worker website builder. 
+                My layouts will work on any device. 
+                Websites don't have to be static, 
+                I love making pages come to life.</p>
             <div class="my-pic-cont">
 
-                <img class="my-pic" src="images/hajos.jpg" alt="">
+                <img class="my-pic" src="images/hajos.jpg" alt="on-boat">
             </div>
                  
             <div class="links-container">
@@ -54,36 +59,30 @@
                 <div class="links">
                   
                      <a href="https://github.com/MrLaz">
-                         <img src="images/github.png" alt="github-logo">
+                         <img class="eye-move eye-left" src="images/github.png" alt="github-logo">
                      </a>
                      <a href="">
-                         <img src="images/linkedin.png" alt="linkedin-logo">
+                         <img class="eye-move eye-right" src="images/linkedin.png" alt="linkedin-logo">
                      </a>
                      <a class="resume" href="#">
                           Resume
                      </a>
                 
-                    </div>
-                    <div class="bubble" >
+                </div>
+                <div class="bubble" >
                     
-                        <div>
+                    <div>
         
-                            Hey! How's it going?
-                        </div>
-                        <img src="images/bubble.png" alt="">
+                        Hey! How's it going?
                     </div>
+                    <img src="images/bubble.png" alt="">
+                </div>
              
                  
             </div>
         </div>
-
-
-        
-
-        
-       
-        
     </section>
+
     <section>
         <p id="portfolio">space</p>
         <h2 class="main-titles" >Projects</h2>
@@ -116,13 +115,14 @@
             
         </div>
     </section>
+    
     <section class="contact-container">
         <p id="contact">blank</p>
         <h2 class="main-titles">Contact</h2>
         <p class="havequestion">Have a question or want to work together?</p>
         <form class="form-class" action="https://formspree.io/xaypozwy" method="post">
             <input type="text" placeholder="Name" name="name" required/>
-            <input type="email" placeholder="Enter email" name="email" required/>
+            <input type="email" placeholder="Enter email" name="email" required>
             <textarea name="message" placeholder="Message"></textarea>
             <input type="submit" value="Send">
         </form>
@@ -130,6 +130,12 @@
         
     </section>
     <footer>
+        <nav class="footer-nav" >
+            <a class="nav-a" href="#home">Home |</a>
+            <a class="nav-a" href="#aboutme">About me |</a>
+            <a class="nav-a" href="#portfolio">Portfolio |</a>
+            <a class="nav-a" href="#contact">Contact</a>
+        </nav>
         <p>Laszlo Borsos © 2020</p>
     </footer>
 
