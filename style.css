@@ -1,15 +1,15 @@
 body {
-    background-color:#121212;
-    color:rgba(255, 255, 255, 0.8);
+    background-color: #121212;
+    color: whitesmoke;
     text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
 }
 .main-titles {
-    padding:50px;
+    padding: 50px;
     font-size: 25px;
-    margin-top:40px;
-    border-top:2px solid rgba(255, 255, 255, 0.8);
-    text-shadow:#3700b3 5px 5px 5px ;
+    margin-top: 40px;
+    border-top: 2px solid whitesmoke;
+    text-shadow: #3700b3 5px 5px 5px;
 }
 
 /* HEADER */
@@ -18,201 +18,222 @@ body {
     visibility: hidden;
 }
 h1 {
-    display:inline-block;
+    display: inline-block;
     position: relative;
     font-size: 30px;
-    margin-top:200px;
-    padding:5px;    
+    margin-top: 170px;
+    padding: 5px;
 }
 h1 span {
-    color:#cf6679;
+    color: #cf6679;
 }
 .horizontal-mask {
-    position: absolute;   
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 5px;
-    background-color:#03dac550;
+    background-color: #03dac550;
     animation-name: horizontal;
     animation-iteration-count: infinite;
-    animation-duration:25s;
+    animation-duration: 25s;
     animation-direction: alternate;
-    animation-timing-function: linear;   
+    animation-timing-function: linear;
 }
 
 @keyframes horizontal {
-0% {top:0%; }
-25% {top:60%;}
-50% {top:20%;}
-75% {top:90%;}
-100% {top:30%;}
+    0% {
+        top: 5%;
+    }
+    25% {
+        top: 60%;
+    }
+    50% {
+        top: 20%;
+    }
+    75% {
+        top: 90%;
+    }
+    100% {
+        top: 30%;
+    }
 }
 .vertical-mask {
-    position: absolute;   
+    position: absolute;
     top: 0;
     left: 0;
     width: 5px;
     height: 1080px;
-    background-color:#03dac550;
-    animation-name:vertical;
+    background-color: #03dac550;
+    animation-name: vertical;
     animation-iteration-count: infinite;
-    animation-duration:30s;
+    animation-duration: 30s;
     animation-direction: alternate;
     animation-timing-function: linear;
 }
 @keyframes vertical {
-    0% {left:0;}
-    25% {left:50%;}
-    50% {left :20%;}
-    75% {left:80%;}
-    100% {left:30%}   
+    0% {
+        left: 0;
+    }
+    25% {
+        left: 50%;
+    }
+    50% {
+        left: 20%;
+    }
+    75% {
+        left: 80%;
+    }
+    100% {
+        left: 30%;
+    }
 }
 .more-info {
-    display:inline-block;
-    text-decoration:none;
-    font-size:20px;
-    color:rgba(255, 255, 255, 0.8);
-    border:2px solid rgba(255, 255, 255, 0.8);
-    padding:5px;
-    margin-top:200px;
-    margin-bottom:600px;    
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+    padding: 5px;
+    margin-top: 200px;
+    margin-bottom: 600px;
 }
 
 /* FIRST SECTION */
 
-.menu-logo {   
-    margin-top:10px;
+.menu-logo {
+    margin-top: 10px;
     width: 50px;
     height: 20px;
-    padding:3px;
-    background-color: rgba(255, 255, 255, 0.8);
+    padding: 3px;
+    background-color: whitesmoke;
     cursor: pointer;
 }
 .dropdown {
-    top:0;
+    top: 0;
     width: 100%;
-    position:fixed;    
+    position: fixed;
     height: 50px;
-    background-color: #121212;  
-    z-index: 2;    
+    background-color: #121212;
+    z-index: 2;
 }
 .dropdown-content {
-    display:none;
-    position:absolute;
+    display: none;
+    position: absolute;
     background-color: lightgrey;
     min-width: 160px;
     z-index: 3;
-    top:45px;
-    left: 0; 
-    right: 0; 
-    margin-left: 20%; 
-    margin-right: 20%;        
+    top: 45px;
+    left: 0;
+    right: 0;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .dropdown-content a {
     text-decoration: none;
-    padding:5px 20px;
-    display:block;
-    color:#121212;
-    font-size: 17px;     
+    padding: 5px 20px;
+    display: block;
+    color: #121212;
+    font-size: 17px;
 }
-.dropdown-content a:hover  {
- background-color: darkgrey;
+.dropdown-content a:hover {
+    background-color: darkgrey;
 }
 .dropdown:hover .dropdown-content {
     display: block;
 }
 .resp {
-    margin-top:10px;
-    border-top:solid rgba(255, 255, 255, 0.8) 2px;
-    padding:50px;
-    text-shadow:#3700b3 5px 5px 5px ;
+    margin-top: 10px;
+    border-top: solid whitesmoke 2px;
+    padding: 50px;
+    text-shadow: #3700b3 5px 5px 5px;
 }
 
 .responsive-pic {
-    
     width: 100%;
     background-color: #03dac6;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
 .skill-container {
     position: relative;
-    top:0;
+    top: 0;
     z-index: 1;
-    display:flex;
-    flex-wrap:wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    
+
     margin-top: 10px;
-    
-    
 }
 .skill {
-    font-size:25px;
-    padding:50px 20px 50px 20px;
-    margin-top:50px;    
+    padding: 30px;
+    margin-top: 50px;
+    width: 70px;
+    text-align: center;
+}
+.fab {
+    font-size: 45px;
+}
+.fab-text {
+    font-size: 20px;
 }
 
 @keyframes back {
-    0% {text-shadow:#121212 10px 5px 5px;}
-    50% {text-shadow:#121212 -10px 5px 5px;}
-    100% {text-shadow:#121212 10px 5px 5px;}
-
+    0% {
+        text-shadow: #121212 -10px 5px 5px;
+    }
+    50% {
+        text-shadow: #121212 10px 5px 5px;
+    }
+    100% {
+        text-shadow: #121212 -10px 5px 5px;
+    }
 }
 
 .skill {
-    background-image: linear-gradient(to right,rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0)  );
-    text-shadow: 10px  5px 5px #121212;
-    
+    background-image: linear-gradient(to right, whitesmoke, #121212);
+    text-shadow: -10px 5px 5px #121212;
+
     animation-duration: 2s;
     animation-timing-function: linear;
-    
 }
 .skill:hover {
     animation-name: back;
-    
 }
 
 /* ABOUT SECTION */
 
 #aboutme {
-    
-    margin-top:80px;
+    margin-top: 80px;
     visibility: hidden;
 }
 .about-container {
-    display:flex;
+    display: flex;
     justify-content: space-around;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     width: 100%;
 }
 .about-text {
-    font-size:22px;
+    font-size: 22px;
     line-height: 30px;
-    margin-top:-20px;
+    margin-top: -20px;
 }
 .my-pic {
     width: 100%;
 }
 
 .links-container {
-    display:block;    
-    margin-top:70px;
+    display: block;
+    margin-top: 70px;
     width: 200px;
-    
-    
-   
-        
 }
 .links {
-    border:4px solid rgba(255, 255, 255, 0.8);
-    border-radius: 10%; 
+    border: 4px solid whitesmoke;
+    border-radius: 10%;
     height: 200px;
     width: 200px;
 }
 .links:hover + .bubble {
-    visibility:visible;
-    
+    visibility: visible;
 }
 .links:hover .resume {
     animation-name: say;
@@ -223,130 +244,149 @@ h1 span {
     display: inline-block;
 }
 
-
 .eye-move {
-    border:1px rgba(255, 255, 255, 0.8) solid;
+    border: 1px whitesmoke solid;
     width: 50px;
-    margin:20px 15px 0 15px;
+    margin: 20px 15px 0 15px;
     border-radius: 50%;
-    padding:5px;
+    padding: 5px;
     background-color: #03dac6;
-    animation-name:eyemove;
+    animation-name: eyemove;
     animation-iteration-count: infinite;
     animation-duration: 5s;
 }
 
 @keyframes eyemove {
-    0% {padding:5px 5px 5px 5px;}
-    33% {padding:5px 0px 5px 10px;}
-    
-    66% {padding:5px 10px 5px 0px;}
-    100% {padding:5px 5px 5px 5px;}
+    0% {
+        padding: 5px 5px 5px 5px;
+    }
+    33% {
+        padding: 5px 0px 5px 10px;
+    }
+
+    66% {
+        padding: 5px 10px 5px 0px;
+    }
+    100% {
+        padding: 5px 5px 5px 5px;
+    }
 }
 .links:hover .eye-right {
-    
     animation-name: wink;
     animation-duration: 1s;
     animation-iteration-count: initial;
-    
 }
-@keyframes wink{
-    0% {height: 50px;}
-    50% {height: 2px;margin-bottom:20px;}
-    100% {height: 50px;}
+@keyframes wink {
+    0% {
+        height: 50px;
+    }
+    50% {
+        height: 2px;
+        margin-bottom: 20px;
+    }
+    100% {
+        height: 50px;
+    }
 }
 .links:hover .eye-left {
-    animation-name: stop-eye; 
+    animation-name: stop-eye;
     animation-duration: 1s;
     animation-iteration-count: initial;
-
 }
 @keyframes stop-eye {
-    0% {padding:5px;}
-    100% {padding:5px;}
+    0% {
+        padding: 5px;
+    }
+    100% {
+        padding: 5px;
+    }
 }
 
-
-
-
-.resume {  
-    position: relative; 
+.resume {
+    position: relative;
     text-decoration: none;
-    font-size:20px;
-    color:rgba(255, 255, 255, 0.8);
-    padding:5px;
-    display:inline-block;
+    font-size: 20px;
+    color: whitesmoke;
+    padding: 5px;
+    display: inline-block;
     background-color: black;
-    margin-top:40px;
-    margin-bottom:20px;
-    border:1px solid rgba(255, 255, 255, 0.8);
-    border-radius:0 0 50% 50%;
-    height:auto;
-    
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 0 0 50% 50%;
+    height: auto;
 }
 
 @keyframes say {
-    0% {padding:5px;}
-    25% {padding:15px 10px 15px 10px;}
-    50% {padding:5px;}
-    75% {padding:10px 10px 10px 10px;}
-    100% {padding:5px;}
+    0% {
+        padding: 5px;
+    }
+    25% {
+        padding: 15px 10px 15px 10px;
+    }
+    50% {
+        padding: 5px;
+    }
+    75% {
+        padding: 10px 10px 10px 10px;
+    }
+    100% {
+        padding: 5px;
+    }
 }
 .bubble {
     position: relative;
     visibility: hidden;
     width: 100%;
-    margin-top:80px;
-    text-align: right;     
- }
- 
- .bubble div {    
-     text-align: right;
-     margin-right: 20px;
-     font-size:18px ;
-    
- }
- .bubble img{    
-    margin-top:-120px;
-    width: 200px;
- }
+    margin-top: 80px;
+    text-align: right;
+}
+
+.bubble div {
+    text-align: right;
+    margin-right: 10px;
+    font-size: 18px;
+}
+.bubble img {
+    margin-top: -120px;
+    width: 210px;
+}
 
 /* PORTFOLIO SECTION */
 
 #portfolio {
     visibility: hidden;
-    margin-top:80px;
+    margin-top: 80px;
 }
-.portfolio {  
-    display:flex;
-    flex-wrap:wrap;
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;      
+    width: 100%;
 }
 
-
-.portfolio img  {
-    width: 99%;  
+.portfolio img {
+    width: 99%;
 }
 
 /* CONTACT SECTION */
 
 #contact {
     visibility: hidden;
-    margin-top:80px;
+    margin-top: 80px;
 }
 .form-class {
     width: 90%;
     margin-left: auto;
-    margin-right: auto;   
+    margin-right: auto;
 }
 .havequestion {
-    font-size:20px;
+    font-size: 20px;
 }
 .form-class input[type="email"],
 input[type="text"],
 textarea {
-    font-size:18px;
+    font-size: 18px;
     height: 40px;
     width: 100%;
     margin-bottom: 10px;
@@ -355,11 +395,11 @@ textarea {
     box-sizing: border-box;
 }
 ::placeholder {
-    color:#121212;
-    padding-left:5px;
-    font-size:18px;
-    font-family: 'Josefin Sans', sans-serif;
-    padding-top:7px;
+    color: #121212;
+    padding-left: 5px;
+    font-size: 18px;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 7px;
 }
 textarea {
     height: 150px;
@@ -370,137 +410,140 @@ input[type="submit"] {
     margin-right: auto;
     margin-bottom: 220px;
     background-color: #3700b3;
-    color: rgba(255, 255, 255, 0.8);
+    color: whitesmoke;
     font-size: 18px;
     height: 30px;
     width: 100%;
     border: none;
 }
 input[type="submit"]:hover {
-    background-color:#cf6679; 
-    color: rgba(255, 255, 255, 0.8);
+    background-color: #cf6679;
+    color: whitesmoke;
 }
 footer {
-    font-size:14px;
-    border-top: 2px solid rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    border-top: 2px solid whitesmoke;
 }
 .footer-nav {
-    margin-top:10px;
-    margin-bottom:20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .nav-a {
     text-decoration: none;
-    color:#03dac6;
-    font-size:16px; 
-    
+    color: #03dac6;
+    font-size: 16px;
 }
 
 /* MEDIA */
 
-@media (min-width:600px) {
+@media (min-width: 600px) {
     h1 {
-        display:block;
-        font-size:40px;
+        display: block;
+        font-size: 40px;
     }
     .main-titles {
-        font-size:40px
+        font-size: 40px;
     }
     .menu-logo {
-        display:none;
+        display: none;
     }
     .dropdown {
-        display:block;
-        text-align: center;        
+        display: block;
+        text-align: center;
     }
     .dropdown-content {
-        display:inline-block;        
+        display: inline-block;
         height: 40px;
         width: 100%;
-        left:0;
-        top:0;
-        margin-left:0;
-        background-color: #121212;     
+        left: 0;
+        top: 0;
+        margin-left: 0;
+        background-color: #121212;
     }
     .dropdown-content a {
-        display:inline-block;
-        color:#03dac6;
-        font-size:28px; 
-        padding: 5px 15px;      
+        display: inline-block;
+        color: #03dac6;
+        font-size: 28px;
+        padding: 5px 15px;
     }
     .dropdown-content a:hover {
         color: #121212;
     }
-    
+
     .responsive-pic {
         width: 60%;
     }
-    .skill-container div {
-        font-size: 50px;
-        margin-top:150px;
-        
+    .skill {
+        width: 120px;
     }
+    .fab {
+        font-size: 70px;
+    }
+    .fab-text {
+        font-size: 30px;
+    }
+
     .about-text {
-        font-size:30px;
-        margin-left:50px;
+        font-size: 30px;
+        margin-left: 50px;
         margin-right: 50px;
         line-height: 40px;
-        padding:10px;    
+        padding: 10px;
     }
-   
+
     .my-pic-cont {
         width: 50%;
     }
-    
+
     .my-pic {
-        width: 100%; 
-        margin-left:20px;  
-        margin-top: 50px;         
+        width: 100%;
+        margin-left: 20px;
+        margin-top: 50px;
     }
-        
+
     .portfolio div {
         width: 50%;
     }
-    
+
     .resume {
-        margin-top:50px;
-        font-size:30px;
+        margin-top: 50px;
+        font-size: 30px;
     }
-    
+
     .resp {
-        font-size:40px;
+        font-size: 40px;
     }
     .form-class {
         max-width: 500px;
     }
     .havequestion {
-        font-size:30px;
+        font-size: 30px;
     }
     footer {
-        font-size:18px;
+        font-size: 18px;
     }
     .nav-a {
         font-size: 22px;
     }
-      
 }
-@media (min-width:800px) {
+@media (min-width: 800px) {
     .links img {
-        margin-top:30px;
+        margin-top: 30px;
     }
     .links {
         width: 250px;
         height: 250px;
-        margin-left:auto;
-        margin-right:auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .links-container {
         width: 48%;
-        margin-top:100px;
+        margin-top: 100px;
     }
     .bubble {
         right: 8%;
     }
+    .bubble div {
+        margin-right: 20px;
+    }
 }
-
-
-  
