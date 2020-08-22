@@ -5,18 +5,25 @@ body {
     font-family: "Josefin Sans", sans-serif;
 }
 .main-titles {
-    padding: 50px;
+    display:inline-block;
+    padding: 10px;
     font-size: 25px;
-    margin-top: 40px;
-    border-top: 2px solid whitesmoke;
-    text-shadow: #3700b3 5px 5px 5px;
+    margin: 90px auto;
+    
+    background-image: linear-gradient(to right, whitesmoke, #121212);
+    text-shadow: #121212 -5px 5px 5px;
+}
+.sep {
+    margin-top:50px;
+    width: 100%;
+    height: 3px;
+    background-color: whitesmoke;
 }
 
 /* HEADER */
 
-#home {
-    visibility: hidden;
-}
+
+
 h1 {
     display: inline-block;
     position: relative;
@@ -142,12 +149,7 @@ h1 span {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-.resp {
-    margin-top: 10px;
-    border-top: solid whitesmoke 2px;
-    padding: 50px;
-    text-shadow: #3700b3 5px 5px 5px;
-}
+
 
 .responsive-pic {
     width: 100%;
@@ -202,10 +204,7 @@ h1 span {
 
 /* ABOUT SECTION */
 
-#aboutme {
-    margin-top: 80px;
-    visibility: hidden;
-}
+
 .about-container {
     display: flex;
     justify-content: space-around;
@@ -354,10 +353,7 @@ h1 span {
 
 /* PORTFOLIO SECTION */
 
-#portfolio {
-    visibility: hidden;
-    margin-top: 80px;
-}
+
 .portfolio {
     display: flex;
     flex-wrap: wrap;
@@ -371,10 +367,7 @@ h1 span {
 
 /* CONTACT SECTION */
 
-#contact {
-    visibility: hidden;
-    margin-top: 80px;
-}
+
 .form-class {
     width: 90%;
     margin-left: auto;
@@ -471,7 +464,8 @@ footer {
     }
 
     .responsive-pic {
-        width: 60%;
+        width: 80%;
+        
     }
     .skill {
         width: 120px;
@@ -500,6 +494,10 @@ footer {
         margin-left: 20px;
         margin-top: 50px;
     }
+    .portfolio {
+        width:80%;
+        margin:auto;
+    }
 
     .portfolio div {
         width: 50%;
@@ -510,9 +508,7 @@ footer {
         font-size: 30px;
     }
 
-    .resp {
-        font-size: 40px;
-    }
+    
     .form-class {
         max-width: 500px;
     }
