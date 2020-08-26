@@ -167,8 +167,10 @@ h1 span {
     margin-top: 10px;
 }
 .skill {
-    padding: 30px;
+    padding: 10px;
     margin-top: 50px;
+    margin-left:20px;
+    margin-right:20px;
     width: 70px;
     text-align: center;
 }
@@ -181,19 +183,19 @@ h1 span {
 
 @keyframes back {
     0% {
-        text-shadow: #121212 -10px 5px 5px;
+        text-shadow: #121212 0px 0px 5px;
     }
     50% {
-        text-shadow: #121212 10px 5px 5px;
+        text-shadow: #121212 0px 0px 30px;
     }
     100% {
-        text-shadow: #121212 -10px 5px 5px;
+        text-shadow: #121212 0px 0px 5px;
     }
 }
 
 .skill {
     background-image: linear-gradient(to right, whitesmoke, #121212);
-    text-shadow: -10px 5px 5px #121212;
+    text-shadow: 0px 0px 5px #121212;
 
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -462,9 +464,12 @@ footer {
     .dropdown-content a:hover {
         color: #121212;
     }
+    .img-cont {
+        width:100%;
+    }
 
     .responsive-pic {
-        width: 80%;
+        width: 60%;
         
     }
     .skill {
