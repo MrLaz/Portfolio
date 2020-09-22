@@ -1,28 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #121212;
-    color: whitesmoke;
+    background-color: #0c0032;
+    color: white;
     text-align: center;
     font-family: "Josefin Sans", sans-serif;
 }
 .main-titles {
-    display:inline-block;
-    padding: 10px;
+    padding: 5px;
     font-size: 25px;
-    margin: 90px auto;
-    
+    margin: 100px 0 50px 0;
+
+    text-shadow: #3700b3 5px 5px 5px;
+
+    border-radius: 3px;
+
     background-image: linear-gradient(to right, whitesmoke, #121212);
-    text-shadow: #121212 -5px 5px 5px;
+    text-shadow: -5px 3px 5px black;
 }
 .sep {
-    margin-top:50px;
+    margin-top: 80px;
+
     width: 100%;
     height: 3px;
     background-color: whitesmoke;
+    margin-bottom: 80px;
 }
 
 /* HEADER */
-
-
 
 h1 {
     display: inline-block;
@@ -108,12 +116,13 @@ h1 span {
 
 /* FIRST SECTION */
 
-.menu-logo {
-    margin-top: 10px;
-    width: 50px;
-    height: 20px;
-    padding: 3px;
-    background-color: whitesmoke;
+.fas {
+    padding: 5px;
+    display: block;
+    font-size: 30px;
+
+    background-color: #0c003291;
+    color: whitesmoke;
     cursor: pointer;
 }
 .dropdown {
@@ -121,7 +130,7 @@ h1 span {
     width: 100%;
     position: fixed;
     height: 50px;
-    background-color: #121212;
+
     z-index: 2;
 }
 .dropdown-content {
@@ -150,9 +159,8 @@ h1 span {
     display: block;
 }
 
-
 .responsive-pic {
-    width: 100%;
+    width: 90%;
     background-color: #03dac6;
     margin-bottom: 30px;
 }
@@ -162,40 +170,17 @@ h1 span {
     z-index: 1;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
-    margin-top: 10px;
-}
-.skill {
-    padding: 10px;
     margin-top: 50px;
-    margin-left:20px;
-    margin-right:20px;
-    width: 70px;
-    text-align: center;
 }
-.fab {
-    font-size: 45px;
-}
-.fab-text {
-    font-size: 20px;
-}
-
-@keyframes back {
-    0% {
-        text-shadow: #121212 0px 0px 5px;
-    }
-    50% {
-        text-shadow: #121212 0px 0px 30px;
-    }
-    100% {
-        text-shadow: #121212 0px 0px 5px;
-    }
-}
-
 .skill {
+    padding: 5px 0 5px 0;
+    margin: 10px 10px 10px 10px;
+    border-radius: 3px;
+    width: 65px;
     background-image: linear-gradient(to right, whitesmoke, #121212);
-    text-shadow: 0px 0px 5px #121212;
+    text-shadow: -5px 3px 5px black;
 
     animation-duration: 2s;
     animation-timing-function: linear;
@@ -203,23 +188,43 @@ h1 span {
 .skill:hover {
     animation-name: back;
 }
+.fab {
+    font-size: 35px;
+}
+.fab-text {
+    font-size: 15px;
+}
+
+@keyframes back {
+    0% {
+        text-shadow: #121212 -5px 3px 5px;
+    }
+    50% {
+        text-shadow: #121212 0px 6px 5px;
+    }
+    100% {
+        text-shadow: #121212 -5px 3px 5px;
+    }
+}
 
 /* ABOUT SECTION */
-
 
 .about-container {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 .about-text {
     font-size: 22px;
     line-height: 30px;
     margin-top: -20px;
+    margin-bottom: 30px;
 }
 .my-pic {
-    width: 100%;
+    width: 90%;
 }
 
 .links-container {
@@ -246,7 +251,6 @@ h1 span {
 }
 
 .eye-move {
-    border: 1px whitesmoke solid;
     width: 50px;
     margin: 20px 15px 0 15px;
     border-radius: 50%;
@@ -307,13 +311,13 @@ h1 span {
     position: relative;
     text-decoration: none;
     font-size: 20px;
-    color: whitesmoke;
+    color: black;
     padding: 5px;
     display: inline-block;
-    background-color: black;
+    background-color: #03dac6;
     margin-top: 40px;
     margin-bottom: 20px;
-    border: 1px solid whitesmoke;
+
     border-radius: 0 0 50% 50%;
     height: auto;
 }
@@ -355,20 +359,27 @@ h1 span {
 
 /* PORTFOLIO SECTION */
 
-
 .portfolio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+
+    margin-bottom: 100px;
 }
 
 .portfolio img {
-    width: 99%;
+    width: 85%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: auto;
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0);
+}
+.portfolio img:hover {
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.4);
 }
 
 /* CONTACT SECTION */
-
 
 .form-class {
     width: 90%;
@@ -377,6 +388,7 @@ h1 span {
 }
 .havequestion {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 .form-class input[type="email"],
 input[type="text"],
@@ -453,7 +465,10 @@ footer {
         left: 0;
         top: 0;
         margin-left: 0;
-        background-color: #121212;
+        background-color:  #0c003291;
+    }
+    .fas {
+        display:none;
     }
     .dropdown-content a {
         display: inline-block;
@@ -464,22 +479,18 @@ footer {
     .dropdown-content a:hover {
         color: #121212;
     }
-    .img-cont {
-        width:100%;
-    }
 
     .responsive-pic {
         width: 60%;
-        
     }
     .skill {
-        width: 120px;
+        width: 100px;
     }
     .fab {
-        font-size: 70px;
+        font-size: 60px;
     }
     .fab-text {
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .about-text {
@@ -499,10 +510,6 @@ footer {
         margin-left: 20px;
         margin-top: 50px;
     }
-    .portfolio {
-        width:80%;
-        margin:auto;
-    }
 
     .portfolio div {
         width: 50%;
@@ -513,7 +520,9 @@ footer {
         font-size: 30px;
     }
 
-    
+    .resp {
+        font-size: 40px;
+    }
     .form-class {
         max-width: 500px;
     }
