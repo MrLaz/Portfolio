@@ -12,7 +12,7 @@ body {
 .main-titles {
     padding: 5px;
     font-size: 25px;
-    margin: 100px 0 50px 0;
+    margin: 100px 0 100px 0;
 
     text-shadow: #3700b3 5px 5px 5px;
 
@@ -72,7 +72,7 @@ h1 span {
 }
 .vertical-mask {
     position: absolute;
-    top: 0;
+    top: 35px;
     left: 0;
     width: 5px;
     height: 1080px;
@@ -113,22 +113,31 @@ h1 span {
 
 /* FIRST SECTION */
 
-.fas {
+
+.hamb {
     padding: 5px;
-    display: block;
+    
     font-size: 30px;
 
-    background-color: #0c003291;
     color: whitesmoke;
     cursor: pointer;
 }
 .dropdown {
-    top: 0;
-    width: 100%;
-    position: fixed;
+    margin-left:10px;
+    top: 10px;
+    
+    position:fixed;
     height: 50px;
 
     z-index: 2;
+}
+.topline {
+    
+    position:fixed;
+    top:0;
+    background-color: #0c0032a9;
+    height: 50px;
+    width: 100%;
 }
 .dropdown-content {
     display: none;
@@ -136,21 +145,22 @@ h1 span {
     background-color: lightgrey;
     min-width: 160px;
     z-index: 3;
-    top: 45px;
-    left: 0;
-    right: 0;
-    margin-left: 20%;
-    margin-right: 20%;
+    top: 0px;
+    left: 0px;
+    
+    
 }
-.dropdown-content a {
+.nav_element {
     text-decoration: none;
     padding: 5px 20px;
     display: block;
     color: #121212;
     font-size: 17px;
 }
-.dropdown-content a:hover {
+.nav_element:hover {
     background-color: darkgrey;
+    
+     
 }
 .dropdown:hover .dropdown-content {
     display: block;
@@ -160,6 +170,7 @@ h1 span {
     width: 90%;
     background-color: #03dac6;
     margin-bottom: 30px;
+    
 }
 .skill-container {
     position: relative;
@@ -359,22 +370,29 @@ h1 span {
 .portfolio {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 100%;
 
     margin-bottom: 100px;
 }
 
-.portfolio img {
-    width: 85%;
+.port_img {
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     height: auto;
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0);
+    
 }
-.portfolio img:hover {
+.portfolio a {
+    width: 90%;
+}
+.port_img:hover {
     box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.4);
 }
+.upload {
+    position: absolute;
+}
+
 
 /* CONTACT SECTION */
 
@@ -435,12 +453,22 @@ footer {
 .nav-a {
     text-decoration: none;
     color: #03dac6;
-    font-size: 16px;
+    font-size: 14px;
+    padding-left:5px;
+    padding-right:5px;
+    
+}
+.nav-a:hover {
+    color:#0c0032;
+    background-color:#03dac6 ;
 }
 
 /* MEDIA */
 
 @media (min-width: 600px) {
+    .topline {
+        display: none;
+    }
     h1 {
         display: block;
         font-size: 40px;
@@ -452,29 +480,37 @@ footer {
         display: none;
     }
     .dropdown {
-        display: block;
+        width:100%;
         text-align: center;
+        top:0;
+        margin-left:0;
     }
     .dropdown-content {
-        display: inline-block;
-        height: 40px;
+        display: block;
+        line-height: 30px;
         width: 100%;
         left: 0;
         top: 0;
         margin-left: 0;
-        background-color:  #0c003291;
+        background-color: #0c0032a2;
+        
+        
     }
-    .fas {
+    .hamb {
+        
         display:none;
+        
     }
-    .dropdown-content a {
+    .nav_element {
         display: inline-block;
         color: #03dac6;
-        font-size: 28px;
+        font-size: 25px;
         padding: 5px 15px;
+        
     }
-    .dropdown-content a:hover {
+    .nav_element:hover {
         color: #121212;
+        
     }
 
     .responsive-pic {
@@ -507,10 +543,12 @@ footer {
         margin-left: 20px;
         margin-top: 50px;
     }
-
-    .portfolio div {
-        width: 50%;
+    .portfolio a  {
+        width:40%;
     }
+        
+
+     
 
     .resume {
         margin-top: 50px;
@@ -530,7 +568,9 @@ footer {
         font-size: 18px;
     }
     .nav-a {
-        font-size: 22px;
+        font-size: 18px;
+        padding-left:10px;
+        padding-right:10px;
     }
 }
 @media (min-width: 800px) {
