@@ -168,8 +168,9 @@ h1 span {
 
 .responsive-pic {
     width: 90%;
-    background-color: #03dac6;
+    background-color: rgba(255, 255, 255, 0.123);
     margin-bottom: 30px;
+    box-shadow: white -5px -5px 50px inset;
     
 }
 .skill-container {
@@ -230,9 +231,12 @@ h1 span {
     line-height: 30px;
     margin-top: -20px;
     margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.205);
+    box-shadow: rgba(255, 255, 255, 0.411) -5px -5px 15px inset;
 }
 .my-pic {
     width: 90%;
+    box-shadow: rgba(255, 255, 255, 0.514) 10px 10px 10px ;
 }
 
 .links-container {
@@ -431,16 +435,18 @@ input[type="submit"] {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 220px;
-    background-color: #3700b3;
+    background-color:grey;
     color: whitesmoke;
     font-size: 18px;
-    height: 30px;
+    line-height: 40px;
     width: 100%;
     border: none;
+    
 }
 input[type="submit"]:hover {
-    background-color: #cf6679;
-    color: whitesmoke;
+    background-color:whitesmoke;
+    color: #0c0032;
+    box-shadow: #0c003298 -5px -5px 5px inset;
 }
 footer {
     font-size: 14px;
